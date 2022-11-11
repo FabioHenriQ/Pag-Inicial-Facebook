@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    padding: 7%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 242, 245);
+}
+form {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 3%;
+    font-size: 18px;
+    border: 1px solid rgb(212, 210, 210);
+}
+/*----------------esquerda-----------------*/
+.mainEsq {
+    width: 50%;
+    height: 400px;
+    padding-left: 80px;
+}
+.mainEsq h2{
+    color: #125af5;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+}
+.mainEsq h1{
+    font-size: 26px;
+    font-weight: lighter;
+}
+.mainEsq h4{
+    padding-top: 5px;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    font-weight: lighter;
+}
+.cartaoRecente {
+    width: 170px;
+    height: 210px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 221, 221);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    cursor: pointer;
+}
+.cartaoRecente h4 {
+    padding-top: 70px;
+    font-size: 18px;
+    color: #4980f6;
+    font-weight: 100;
+}
+.cartaoRecente:hover {
+    box-shadow: 0 8px 12px 0 rgb(202, 200, 200);
+}
+.-m {
+    font-size: 50px;
+    color: white;
+    padding-top: 40%;
+    height: 50%;
+}
+.-m p {
+    color: white;
+    width: 45px;
+    padding-left: 11px;
+    font-size: 40px;
+    font-weight: lighter;
+    background-color: #125af5;
+    border-radius: 30px;
+}
+
+/*--------------------Direita-----------------*/
+.mainDir {
+    background-color: white;
+    margin-top: 30px;
+    margin-right: 100px;
+    width: 400px;
+    height: 370px;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgb(202, 200, 200);
+}
+input::placeholder{
+    color: rgb(153, 154, 162);
+    font-size: 17px;
+}
+input[type=button][name=entrar] {
+    background-color: #125af5;
+    color: azure;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type=button][name=novo] {
+    width: 50%;
+    background-color: rgb(65, 189, 53);
+    color: azure;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 27px;
+    cursor: pointer;
+}
+.mainDir form a {
+    font-size: 14px;
+    color: rgb(89, 89, 248);;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(224, 210, 210);
+}
+.mainDir form a:hover {
+    text-decoration: underline;
+}
+.mainDir p {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 14px;
+}
