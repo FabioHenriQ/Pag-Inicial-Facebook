@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
 *{
     box-sizing: border-box;
     border: 0;
@@ -24,6 +25,10 @@ form input {
     margin-bottom: 3%;
     font-size: 18px;
     border: 1px solid rgb(212, 210, 210);
+    outline: none;
+}
+.anima {
+    outline: 2px solid rgb(84, 111, 199);
 }
 /*----------------esquerda-----------------*/
 .mainEsq {
@@ -32,11 +37,12 @@ form input {
     padding-left: 80px;
 }
 .mainEsq h2{
-    color: #125af5;
+    color: #1877f2;
     font-size: 40px;
     padding-bottom: 20px;
-    font-family: 'Questrial', sans-serif;
-    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 900;
+    letter-spacing: -2px;
 }
 .mainEsq h1{
     font-size: 26px;
@@ -59,6 +65,7 @@ form input {
     flex-direction: column;
     background-color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 .cartaoRecente h4 {
     padding-top: 70px;
@@ -67,7 +74,8 @@ form input {
     font-weight: 100;
 }
 .cartaoRecente:hover {
-    box-shadow: 0 8px 12px 0 rgb(202, 200, 200);
+    box-shadow: 0 0px 15px 0 rgb(202, 200, 200);
+    transition-duration: 0.3s;
 }
 .-m {
     font-size: 50px;
@@ -86,10 +94,9 @@ form input {
 }
 
 /*--------------------Direita-----------------*/
-.mainDir {
+.mainDir form{
     background-color: white;
-    margin-top: 30px;
-    margin-right: 100px;
+    margin: 30px 100px 0 0;
     width: 400px;
     height: 370px;
     justify-items: center;
@@ -111,7 +118,7 @@ input[type=button][name=entrar] {
 }
 input[type=button][name=novo] {
     width: 50%;
-    background-color: rgb(65, 189, 53);
+    background-color: #42b72a;
     color: azure;
     font-size: large;
     font-weight: bold;
@@ -132,7 +139,39 @@ input[type=button][name=novo] {
     text-decoration: underline;
 }
 .mainDir p {
-    text-align: center;
     padding-top: 35px;
+    width: 80%;
+    text-align: center;
     font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+    }
+    .mainDir{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 70%;
+        margin: 0;
+        padding: 0;
+    }
+    .mainDir form{
+        margin: 0;
+    }
+    .mainEsq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .mainEsq h4, .mainEsq h1{
+        text-align: center;
+    }
 }
